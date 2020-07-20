@@ -11,6 +11,20 @@ How to configure the environment?
 
     using the command pip install to install the libs in python
     
-2. configure
+2. configure QtDesigner (optional)
     
-    using
+    https://www.jianshu.com/p/b63f1db0ed11
+    
+    if you have configured the QtDesigner, you can modify the UI file (image_processing.ui)
+    
+    remeber, after you modify the UI file, you should convert it into ui.py by using the command pyuic5 -o xxx.py xxx.ui
+
+How to run this project?
+
+1. run main.py
+
+2. click the buttons in the App in order to operate it
+
+Functions
+
+1. 
