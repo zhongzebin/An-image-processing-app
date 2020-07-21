@@ -87,7 +87,7 @@ Functions
     
 3. cutting
 
-    When the App user rotates the "裁剪" plate, on_pushButton_4_clicked(self) in ui_connect.py activates
+    When the App user clicks the "裁剪" button, on_pushButton_4_clicked(self) in ui_connect.py activates
     
     In order to visualize the cutting area, I designed the fuctions mousePress(self, event), mouseMove(self,event) and mouseRelease(self,event) in ui_connect.py. In this case, the user can drag rectangles on the image
 
@@ -96,3 +96,25 @@ Functions
     After cut:
     
     ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/cut.png)
+    
+4. extract channels
+
+    When the App user clicks the "R" or "G" or "B" button, on_pushButton_5_clicked(self) or on_pushButton_6_clicked(self) or on_pushButton_7_clicked(self) in ui_connect.py activates
+    
+    They will call function extractChannel(img,channel) in image_processing.py
+    
+    After extracting channels:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/channel.png)
+    
+5. graying
+
+     When the App user clicks the "灰度化" button, on_pushButton_8_clicked(self) in ui_connect.py activates
+     
+     It will call function gray(img) in image_processing.py
+     
+     graying fuction: gray=0.299R+0.587G+0.114B
+     
+     After graying:
+     
+     ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/gray.png)
