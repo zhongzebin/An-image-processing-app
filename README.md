@@ -51,6 +51,6 @@ Functions
     
     In reshape(self), I use bilinear interpolation algorithm:
     
-    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/function1.png)
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/function1.PNG)
     
-    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/function2.png)
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/function2.PNG)
