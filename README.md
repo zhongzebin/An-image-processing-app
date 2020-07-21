@@ -158,3 +158,11 @@ Functions
     After color rotation:
     
     ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/color%20rotation.png)
+    
+8. convolution
+
+    Convolution process locates in function numpy_conv(inputs,filter)
+    
+    Convolution process:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/convolution.png)
