@@ -161,8 +161,14 @@ Functions
     
 8. convolution
 
-    Convolution process locates in function numpy_conv(inputs,filter)
+    Convolution process locates in function numpy_conv(inputs,filter) in image_processing.py
     
     Convolution process:
     
     ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/convolution.png)
+    
+9. mean filter
+
+    When the App user clicks the "均值滤波" button, on_pushButton_10_clicked(self) in ui_connect.py activates
+    
+    It will call mean(img) in image_processing.py
