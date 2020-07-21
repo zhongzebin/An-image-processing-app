@@ -89,4 +89,10 @@ Functions
 
     When the App user rotates the "裁剪" plate, on_pushButton_4_clicked(self) in ui_connect.py activates
     
-    In order to visualize the cutting area, I designed the fuctions mousePress(self, event), mouseMove(self,event) and mouseRelease(self,event). In this case, the user can drag rectangles on the image
+    In order to visualize the cutting area, I designed the fuctions mousePress(self, event), mouseMove(self,event) and mouseRelease(self,event) in ui_connect.py. In this case, the user can drag rectangles on the image
+
+    It will also call function cutImg(img,x1,y1,x2,y2) in image_processing.py
+    
+    After cut:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/cut.png)
