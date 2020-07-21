@@ -171,4 +171,26 @@ Functions
 
     When the App user clicks the "均值滤波" button, on_pushButton_10_clicked(self) in ui_connect.py activates
     
-    It will call mean(img) in image_processing.py
+    It will call function mean(img) in image_processing.py
+    
+    kernel = np.ones((9, 9))
+    
+    kernel /= np.sum(kernel)
+    
+    After mean filter:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/mean%20filter.png)
+    
+10. gaussian filter
+
+    When the App user clicks the "高斯滤波" button, on_pushButton_11_clicked(self) in ui_connect.py activates
+    
+    It will call function Gaussian(img) in image_processing.py
+    
+    Gaussian kernel:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/function11.JPG)
+    
+    After gaussian filter:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/Gaussian%20filter.png)
