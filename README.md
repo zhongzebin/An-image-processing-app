@@ -118,3 +118,9 @@ Functions
      After graying:
      
      ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/gray.png)
+     
+ 6. normalizing
+ 
+    When the App user clicks the "归一化" button, on_pushButton_9_clicked(self) in ui_connect.py activates
+    
+    It will call function normalize(img) in image_processing.py
