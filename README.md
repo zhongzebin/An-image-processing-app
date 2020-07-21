@@ -29,13 +29,13 @@ Functions
 
 1. read, show and save the image
 
-    When the App user clicks the button "打开文件", function on_pushButton_clicked(self) in ui_connect.py activate
+    When the App user clicks the button "打开文件", function on_pushButton_clicked(self) in ui_connect.py activates
     
     It will also call function readImg(self) in image_processing.py
     
     Fuction ImgShow(self) is used to show the image on the App
     
-    When the App user click the button "保存文件", function on_pushButton_2_clicked(self) in ui_connect.py activate
+    When the App user click the button "保存文件", function on_pushButton_2_clicked(self) in ui_connect.py activates
     
     It will also call function saveImg(self) in image_processing.py
     
@@ -45,7 +45,7 @@ Functions
     
 2. zooming
     
-    When the App user drags the "缩放" bar, function on_horizontalSlider_valueChanged(self) in ui_connect.py activate
+    When the App user drags the "缩放" bar, function on_horizontalSlider_valueChanged(self) in ui_connect.py activates
     
     It will also call function reshape(self) in image_processing.py
     
@@ -60,3 +60,22 @@ Functions
     After zooming:
     
     ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/zoom.png)
+    
+2. rotating
+
+    When the App user rotates the "旋转" plate, function on_dial_valueChanged(self) in ui_connect.py activates
+    
+    It will also call function rotateImg(self) in image_processing.py
+    
+    The shape of the image after rotation is:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/function3.PNG)
+    
+    The rotation matrix is:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/function4.PNG)
+    
+    The point after rotation is:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/function5.PNG)
+    
