@@ -79,3 +79,6 @@ Functions
     
     ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/function5.PNG)
     
+    After rotation:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/rotation.png)
