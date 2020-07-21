@@ -49,4 +49,8 @@ Functions
     
     It will also call function reshape(self) in image_processing.py
     
+    In reshape(self), I use bilinear interpolation algorithm:
     
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/function1.png)
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/function2.png)
