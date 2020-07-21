@@ -194,3 +194,33 @@ Functions
     After gaussian filter:
     
     ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/Gaussian%20filter.png)
+    
+11. median filter
+
+    When the App user clicks the "中值滤波" button, on_pushButton_12_clicked(self) in ui_connect.py activates
+    
+    It will call function median(img,w) in image_processing.py
+    
+    In median filter, we get the median value in every window
+    
+    After median filter:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/median%20filter.png)
+    
+12. sobel
+
+    When the App user clicks the "Sobel算子" button, on_pushButton_13_clicked(self) in ui_connect.py activates
+    
+    It will call function sobel(img) in image_processing.py
+    
+    Sobel kernel:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/function12.JPG)
+    
+    Mix x and y:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/function13.JPG)
+    
+    After sobel:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/sobel.png)
