@@ -25,6 +25,8 @@ How to run this project?
 
 2. click the buttons in the App in order to operate it
 
+3. click "确认" after each step
+
 Functions
 
 1. read, show and save the image
@@ -82,3 +84,9 @@ Functions
     After rotation:
     
     ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/rotation.png)
+    
+3. cutting
+
+    When the App user rotates the "裁剪" plate, on_pushButton_4_clicked(self) in ui_connect.py activates
+    
+    In order to visualize the cutting area, I designed the fuctions mousePress(self, event), mouseMove(self,event) and mouseRelease(self,event). In this case, the user can drag rectangles on the image
