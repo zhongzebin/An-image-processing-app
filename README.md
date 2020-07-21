@@ -54,3 +54,9 @@ Functions
     ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/function1.PNG)
     
     ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/function2.PNG)
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/bilinear%20interpolation.png)
+    
+    After zooming:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/zoom.png)
