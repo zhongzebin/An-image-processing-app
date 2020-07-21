@@ -29,7 +29,7 @@ Functions
 
 1. read, show and save the image
 
-    When the App user click the button "打开文件", function on_pushButton_clicked(self) in ui_connect.py activate
+    When the App user clicks the button "打开文件", function on_pushButton_clicked(self) in ui_connect.py activate
     
     It will also call function readImg(self) in image_processing.py
     
@@ -40,5 +40,13 @@ Functions
     It will also call function saveImg(self) in image_processing.py
     
     Image show in this App:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/org.png)
+    
+2. zooming
+    
+    When the App user drags the "缩放" bar, function on_horizontalSlider_valueChanged(self) in ui_connect.py activate
+    
+    It will also call function reshape(self) in image_processing.py
     
     
