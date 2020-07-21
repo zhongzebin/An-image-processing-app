@@ -65,7 +65,7 @@ Functions
     
 2. rotating
 
-    When the App user rotates the "旋转" plate, function on_dial_valueChanged(self) in ui_connect.py activates
+    When the App user rotates the "图像旋转" plate, function on_dial_valueChanged(self) in ui_connect.py activates
     
     It will also call function rotateImg(self) in image_processing.py
     
@@ -127,8 +127,34 @@ Functions
     
     normalize function:
     
-    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/function5.PNG)
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/function6.PNG)
     
     After normalizing:
     
     ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/normalize.png)
+    
+7. color rotation
+
+    When the App user rotates the "绕R旋转" plate, function on_dial_2_valueChanged(self) in ui_connect.py activates
+    
+    It will also call function rotateR(img,angle) in image_processing.py
+    
+    Normalize and anti-sigmoid transform:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/function7.PNG)
+    
+    Rotation matrix:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/function8.PNG)
+    
+    Einstein sum:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/function9.PNG)
+    
+    Sigmoid transform and anti-normalize:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/function10.PNG)
+    
+    After color rotation:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/color%20rotation.png)
