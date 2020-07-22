@@ -229,7 +229,7 @@ Functions
 
     When the App user drags the "二值化" bar, on_horizontalSlider_2_valueChanged(self) in ui_connect.py activates
     
-    It will call function threshold(img,value) in image_processing.py
+    It will call function gray(img) and threshold(img,value) in image_processing.py
     
     If the value of a pixel is larger than the threshold, assign it to 255
     
@@ -238,3 +238,22 @@ Functions
     After bianarization with threshold:
     
     ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/bianarization%20with%20threshold.png)
+    
+13. bianarization with otsu
+
+    When the App user clicks the "otsu二值化" button, on_pushButton_18_clicked(self) in ui_connect.py activates
+    
+    It will call function gray(img) and otsu(img) in image_processing.py
+    
+    Count the pixel numbers in image and store it to pixelAmount
+    
+    Count the pixel numbers in every value and store it to vector pixelCounts
+    
+    Iterate all threshold and find out the threshold, which has the largest variance between groups
+    
+    Use this threshold to do the bianarization
+    
+    After bianarization with otsu:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/bianarization%20with%20otsu.png)
+    
