@@ -312,3 +312,31 @@ Functions
     After filling the contours:
     
     ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/fill%20contours.jpg)
+
+17. fill contours with holes
+
+    When the App user clicks the "K-means-1st含孔轮廓填充" or "K-means-2nd含孔轮廓填充" or "K-means-3rd含孔轮廓填充" button, on_pushButton_33_clicked(self) or on_pushButton_34_clicked(self)  or on_pushButton_35_clicked(self) in ui_connect.py activates
+    
+    It will call function contours_hole_fill(img,type) in image_processing.py
+    
+    I use kmeans_extract(img,type) to do the cluster and extract a group of pixels
+    
+    Extract and simplify the contours is identical with contours_extract(img,type)
+    
+    1st step: flip the coordinates of x and y in order to match matplotlib
+    
+    2nd step: define a class Polygon to store the outer points and inner points of a contour and initialize the class, making all the points the outer points
+    
+    3rd step: extract contour p and p2!=p in the contours
+    
+    4th step: using function point_within_polygon(point, polygon) to judge whether the first point of p is in p2 and if it is true, put p into the outer contour. The principle of this fuction is if this point crosses the p2 segment in y direction in oven times, it is not in p2 and vice versa.
+    
+    5th step: if the first point of p is in any p2, p is the inner contour
+    
+    6th step: iterate all inner and outer contours and if the first point of an inner contour is in an outer contour, this inner contour is a member of the outer contour's class's inner member
+    
+    7th step: use matplotlib.pylab.figure().gca().add_patch() to fill contours with holes
+    
+    After filling the contours with holes:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/fill%20contours%20with%20holes.jpg)
