@@ -241,7 +241,7 @@ Functions
     
 13. bianarization with otsu
 
-    When the App user clicks the "otsu二值化" button, on_pushButton_18_clicked(self) in ui_connect.py activates
+    When the App user clicks the "Otsu二值化" button, on_pushButton_18_clicked(self) in ui_connect.py activates
     
     It will call function gray(img) and otsu(img) in image_processing.py
     
@@ -256,4 +256,28 @@ Functions
     After bianarization with otsu:
     
     ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/bianarization%20with%20otsu.png)
+    
+14. cluster
+
+    When the App user clicks the "K-means颜色" button, on_pushButton_23_clicked(self) in ui_connect.py activates
+    
+    It will call function kmeans(img) in image_processing.py
+    
+    I use k-means algorithm to do the cluster:
+    
+    1st step: unfold the width and length of the image into 1 dimension (N*3 matrix)
+    
+    2nd step: initialize the cluster center c1, c2 and c3
+    
+    3rd step: beign iteration, put all pixels into these three groups according to the Oula distance
+    
+    4th step: refresh the center according to the pixels in groups
+    
+    5th step: continue iterating until the centers remain stable
+    
+    6th step: all the pixels in a group are represented by the center
+    
+    After cluster:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/cluster.png)
     
