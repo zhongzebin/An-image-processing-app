@@ -283,7 +283,7 @@ Functions
     
 15. extract contours
 
-    When the App user clicks the "K-means-1st轮廓提取" or "K-means-2nd轮廓提取" or "K-means-3rd轮廓提取" button, on_pushButton_24_clicked(self) or on_pushButton_25_clicked(self)  or on_pushButton_26_clicked(self) in ui_connect.py activates
+    When the App user clicks the "K-means-1st轮廓提取" or "K-means-2nd轮廓提取" or "K-means-3rd轮廓提取" button, on_pushButton_27_clicked(self) or on_pushButton_28_clicked(self)  or on_pushButton_29_clicked(self) in ui_connect.py activates
     
     It will call function contours_extract(img,type) in image_processing.py
     
@@ -297,5 +297,18 @@ Functions
     
     ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/contours.png)
     
+16. fill contours
+
+    When the App user clicks the "K-means-1st轮廓填充" or "K-means-2nd轮廓填充" or "K-means-3rd轮廓填充" button, on_pushButton_30_clicked(self) or on_pushButton_31_clicked(self)  or on_pushButton_32_clicked(self) in ui_connect.py activates
     
+    It will call function contours_fill(img,type) in image_processing.py
     
+    I use kmeans_extract(img,type) to do the cluster and extract a group of pixels
+    
+    I use image, contours, hierarchy=cv2.findContours(img,cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE) to extract contours
+    
+    I use img = cv2.drawContours(img, contours, index, color, width) to fill the contours
+    
+    After filling the contours:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/fill%20contours.jpg)
