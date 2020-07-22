@@ -281,3 +281,21 @@ Functions
     
     ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/cluster.png)
     
+15. extract contours
+
+    When the App user clicks the "K-means-1st轮廓提取" or "K-means-2nd轮廓提取" or "K-means-3rd轮廓提取" button, on_pushButton_24_clicked(self) or on_pushButton_25_clicked(self)  or on_pushButton_26_clicked(self) in ui_connect.py activates
+    
+    It will call function contours_extract(img,type) in image_processing.py
+    
+    I use kmeans_extract(img,type) to do the cluster and extract a group of pixels
+    
+    I use contours = skimage.measure.find_contours(img,threshold,fully_connnected) to extract contours
+    
+    I use contours[i]=skimage.measure. approximate_polygon(contours[i],tolerance) to simplify the contours
+    
+    After extract contours:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/contours.png)
+    
+    
+    
