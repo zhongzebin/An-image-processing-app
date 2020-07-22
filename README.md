@@ -227,6 +227,14 @@ Functions
     
 13. bianarization with threshold
 
-    When the App user drags the "二值化" bar, on_pushButton_13_clicked(self) in ui_connect.py activates
+    When the App user drags the "二值化" bar, on_horizontalSlider_2_valueChanged(self) in ui_connect.py activates
     
-    It will call function sobel(img) in image_processing.py
+    It will call function threshold(img,value) in image_processing.py
+    
+    If the value of a pixel is larger than the threshold, assign it to 255
+    
+    Else, assign it to 0
+    
+    After bianarization with threshold:
+    
+    ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/bianarization%20with%20threshold.png)
