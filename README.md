@@ -222,5 +222,11 @@ Functions
     ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/function13.JPG)
     
     After sobel:
-    
+        
     ![image](https://github.com/zhongzebin/An-image-processing-app/blob/master/images%20for%20readme/sobel.png)
+    
+13. bianarization with threshold
+
+    When the App user drags the "二值化" bar, on_pushButton_13_clicked(self) in ui_connect.py activates
+    
+    It will call function sobel(img) in image_processing.py
